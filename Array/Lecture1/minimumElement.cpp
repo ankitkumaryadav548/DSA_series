@@ -1,4 +1,4 @@
-//to find maximum element from the array
+//to find minimum element from the array 
 #include <iostream>
 #include<climits>
 using namespace std;
