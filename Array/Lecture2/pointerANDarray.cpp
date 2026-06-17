@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     int arr[] = {12,23,34,55,56};
-    int* ptr = arr ;
+    int* ptr = arr ;    // correct
     int* ptr = &arr[0] ; //this is correct
     // int* ptr = &arr ;  // this is wrong way to pass pointer in array (opposite to passing   pointer to number)
     cout << ptr << endl;  // address of array of 1st index

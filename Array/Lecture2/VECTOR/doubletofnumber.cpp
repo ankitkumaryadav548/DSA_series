@@ -25,3 +25,32 @@ int main(){
         }
     }
 }
+
+//practise 
+// example => 1 3 4 5 2 6  => sum of two number = 7
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main(){
+    int x;  //target
+    cout<< "Enter target: ";
+    cin >> x;
+    vector<int> v;
+    int n;
+    cout << "Enter size of vector: ";
+    cin >> n;
+    for(int i=0;i<=n-1;i++){
+        int q;
+        cin >> q;
+        v.push_back(q);
+    }
+
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
+            if(v[i]+v[j]==x){
+                cout << i << j <<endl;
+            }
+        }
+    }
+}

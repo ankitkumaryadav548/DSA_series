@@ -1,4 +1,4 @@
-//given an array of marks of students, if the marks of nay student is less than 35 then print
+//given an array of marks of students, if the marks of any student is less than 35 then print
 // it's  roll number(roll no. here refer to the index of array)size
 #include <iostream>
 using namespace std ;
