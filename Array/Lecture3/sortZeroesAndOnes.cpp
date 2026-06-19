@@ -8,7 +8,8 @@ void display(vector<int> &v){
     }
     cout << endl;
 }
-// M1
+// M1  (two pass solution)
+//storing element to variable
 void sort01(vector<int> &v){
     int n = v.size();
     int noo = 0;
@@ -24,7 +25,7 @@ void sort01(vector<int> &v){
     }
 }
 
-// M2
+// M2  (using 2 pointer)
 void sort01m2(vector<int> &v){
     int n = v.size();
     int i=0;
