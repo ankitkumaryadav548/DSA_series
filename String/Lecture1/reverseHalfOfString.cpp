@@ -12,6 +12,9 @@ int main(){
         // reverse(n.begin(),n.end()-a/2);  // correct/same
         reverse(n.begin(),n.begin()+a/2); // correct/same
         cout << n;
-    }
+    } else cout << "string is of odd length";
 }
+
+// reverse position 2 to 5 using inbuild function 
+// reverse(str.begin()+1,str.begin()+5);
 
