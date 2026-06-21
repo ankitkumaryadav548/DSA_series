@@ -5,30 +5,37 @@ using namespace std;
 int main(){
 
     //1.length()
-    // string str = "your are studing String ";
-    // cout << str.size(); // same
-    // cout << str.length(); // same
+    string str = "your are studing String ";
+    cout << str.size(); // same
+    cout << str.length(); // same
 
     //2.push_back
-    // string name = "Ankit";
-    // name.push_back('e'); // correct => onlu one character at a time 
-    // // name.push_back('esj'); // not correct => not multiple character
-    // cout << name << endl;
+    string name = "Ankit";
+    name.push_back('e'); // correct => onlu one character at a time 
+    name.push_back('esj'); // not correct => not multiple character
+    cout << name << endl;
 
     //3.pop_back;
-    // name.pop_back();
-    // name.pop_back();
-    // cout <<name <<endl;
+    name.pop_back();
+    name.pop_back();
+    cout <<name <<endl;
 
-    // //4.add(+)
-    // string a = "abc";
-    // string b = "def";
-    // cout << b + "gsjd" << endl;
-    // cout << a + b + "jsdh" ;
+    //4.add(+)
+    string a = "abc";
+    string b = "def";
+    cout << b + "gsjd" << endl;
+    cout << a + b + "jsdh" ;
 
     //5.reverse()
     string str = "ankit";
+    cout << str << endl ;
     reverse(str.begin(),str.end());
-    cout << str ;
+    cout << str << endl ;
+    reverse(str.begin()+2,str.end());
+    cout << str << endl ;
+    reverse(str.begin()+2,str.end()-1);
+    cout << str << endl;
+    reverse(str.begin()+2,str.begin()+5);
+    cout << str << endl;
 
 }
