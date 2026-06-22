@@ -6,7 +6,7 @@
 // 3 then we will sort that vector
 // 4 now we will see that previous word is similar to current word or not   means we will compare previous and current word
 // 5 now we will count that how many word are similar
-// 6 atlast loop we will find which word are similar
+// 6 last loop we will find which word are similar
 #include <iostream>
 #include <sstream>
 #include <vector>
@@ -31,6 +31,7 @@ int main()
         cout << v[i] << endl;
     }
 
+    //how many word are similar => for finding count
     int maxcount = 1;
     int count = 1;
     for (int i = 0; i < v.size(); i++)
@@ -43,6 +44,7 @@ int main()
     }
     // cout << maxcount << endl;
 
+    //which word are similar
     count = 1;
     for (int i = 0; i < v.size(); i++)
     {

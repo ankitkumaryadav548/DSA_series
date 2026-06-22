@@ -1,4 +1,4 @@
-// write programme for finding most frequently occuring character in the given word 
+// write programme for finding most frequently occuring character in the given word (only lower alphabets)
 #include<iostream>
 #include<vector>
 #include<string>
