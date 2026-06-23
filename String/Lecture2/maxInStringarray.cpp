@@ -7,8 +7,6 @@
 
 #include<iostream>
 #include<string>
-#include<algorithm>
-#include<climits>
 using namespace std;
 int main(){
     string s[] = {"123","00234","34","00076"};
@@ -24,5 +22,5 @@ int main(){
     cout << max << endl;
     cout << maxS << endl;
 
-
 }
+

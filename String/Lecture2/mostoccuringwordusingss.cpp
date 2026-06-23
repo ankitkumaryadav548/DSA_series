@@ -42,9 +42,9 @@ int main()
             count = 1;
         maxcount = max(maxcount, count);
     }
-    // cout << maxcount << endl;
+    cout << maxcount << endl;
 
-    //which word are similar
+    // which word are similar
     count = 1;
     for (int i = 0; i < v.size(); i++)
     {
@@ -57,4 +57,95 @@ int main()
             cout << v[i] << " " << maxcount << endl;
         }
     }
+}
+
+//practise 1
+
+#include <iostream>
+#include <sstream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+int main()
+{
+    string s = "hey, my name is ankit and i am pursing b-tech in cse cse";
+    stringstream ss(s);
+    string temp;
+    vector<string> v;
+    while(ss >> temp){
+        v.push_back(temp);
+    }
+    sort(v.begin(),v.end());
+    for(int i=0;i<v.size();i++){
+        cout << v[i] << endl;
+    }
+    int maxcount = 1;
+    int count = 1 ;
+    for(int i=0;i<v.size();i++){
+        if(v[i]==v[i-1])
+        count++ ;
+        else
+        count = 1;
+        maxcount = max(maxcount , count);
+    }
+    // cout << maxcount;
+
+    for(int i=0;i<v.size();i++){
+        if(v[i]==v[i-1])
+        count++ ;
+        else
+        count = 1;
+        if(count == maxcount)
+        cout << v[i] << " " << maxcount;
+    }
+
+}
+
+// practise 2
+
+#include<iostream>
+#include<string>
+#include<sstream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main(){
+    string s = "Hey, my self Ankit and i am doing coding coding" ;
+    stringstream ss(s);
+    vector<string>v;
+    string temp;
+    while(ss >> temp){
+        v.push_back(temp);
+    }
+    sort(v.begin(),v.end()); 
+    //printing sorted vector
+    for(int i=0;i<v.size();i++){
+        cout << v[i] << endl;
+    }
+    //find count of similar word
+
+    int count = 1;
+    int maxcount =1;
+
+    for(int i=0;i<v.size();i++){
+        if(v[i]==v[i-1])
+        count ++ ;
+        else
+        count = 1;
+
+        maxcount = max(maxcount,count);
+    }
+    // cout << maxcount ;
+    
+    // find which word is similar or occuring most of time 
+    
+    for(int i=0;i<v.size();i++){
+        if(v[i]==v[i-1])
+        count ++ ;
+        else
+        count = 1;
+        if(count==maxcount)
+        cout << v[i] << " " << maxcount ;
+    }
+
 }

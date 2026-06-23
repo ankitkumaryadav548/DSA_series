@@ -1,3 +1,5 @@
+//write programme to find that how many character have their different neighbour
+//jksisskjskjd
 #include<iostream>
 #include<string>
 using namespace std ;
@@ -8,7 +10,7 @@ int main(){
     int count = 0;
     int n = s.length();
     for(int i=0;i<n;i++){
-        if(n==1) break;
+        if(n==1) break;   // base condition
         if(n==2 && s[0]!=s[1]){
             count ++;
             break;
