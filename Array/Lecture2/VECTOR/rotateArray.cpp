@@ -1,4 +1,4 @@
-// write programme to reverse an array without using extra array by part wise
+// write programme to rotate an array without using extra array by part wise
 #include <iostream>
 #include <vector>
 
