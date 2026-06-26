@@ -1,5 +1,8 @@
 // given an array of size n+1 consisting of interger from 1 to n. one of the element is duplicate of in the array. Find the duplicate element.
 
+
+
+//M3 (most optimal solution)
 #include<iostream>
 using namespace std;
 int main(){
