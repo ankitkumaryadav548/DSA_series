@@ -1,11 +1,10 @@
 // given an array of size n+1 consisting of interger from 1 to n. one of the element is duplicate of in the array. Find the duplicate element.
 
-
-
 // steps for solution
 //M1 1stly we have to find sum of numbers
 //M2 2ndly we have to find sum of series using formula n*(n+1)/2 
 //M3 3rdly we have to find subtract then we will get duplicate number
+
 
 //M3 (most optimal solution)
 #include<iostream>
