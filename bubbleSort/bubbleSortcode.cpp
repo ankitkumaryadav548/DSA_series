@@ -68,6 +68,8 @@ int main(){
     }
 }
 
+//bubble sort is a stable sort
+
 //time complexity
 // best case => O(n)
 // avg case => O(n^2)

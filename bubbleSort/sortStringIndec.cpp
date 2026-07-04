@@ -1,6 +1,4 @@
-//sort string in descending order
-
-// Given a string consisting of uppercase English letters, extract all characters that are lexicographically greater than 'X', and then sort the extracted characters using the Bubble Sort algorithm. Finally, print the sorted characters separated by spaces.
+//sort string in descending order of values associated after removal of values smaller than x.
 
 #include<iostream>
 using namespace std;
@@ -20,7 +18,7 @@ int main(){
         // for(int j=0;j<=n-1;j++){
         bool flag = true;
         for(int j=0;j<=n-1-i;j++){  // most efficient to include (n-1-i)
-            if(str[j]>str[j+1]){  //swap
+            if(str[j]<str[j+1]){  //swap
                 int temp = str[j];
                 str[j] = str[j+1];
                 str[j+1] = temp ;
