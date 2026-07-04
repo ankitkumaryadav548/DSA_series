@@ -1,5 +1,5 @@
 //check whether given array is sorted or not
-
+//we will see that arr[i]>arr[i+1] then array is not sorted
 #include <iostream>
 using namespace std;
 int main() {
