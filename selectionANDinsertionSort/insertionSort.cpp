@@ -1,3 +1,15 @@
+//selection sort
+//insertion sorting is the stable sorting algorithm
+
+//steps for selection sort =>
+// Assume the first element is already sorted.
+// Pick the next element (key).
+// Compare the key with elements on its left.
+// Shift all larger elements one position to the right.
+// Insert the key into its correct position.
+// Repeat until all elements are sorted.
+
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -12,7 +24,7 @@ int main(){
         // while(j>=1){    //M1
         //     if(arr[j]<arr[j-1]) swap(arr[j],arr[j-1]);
         //     else{
-        //         (arr[j]>=arr[j-1]) ;
+        //         // (arr[j]>=arr[j-1]) ;
         //         break; 
         //     }
         //     j-- ;
@@ -27,3 +39,4 @@ int main(){
         cout << arr[i] << " ";
     }
 }
+
