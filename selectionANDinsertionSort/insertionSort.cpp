@@ -27,7 +27,7 @@ int main(){
         //         // (arr[j]>=arr[j-1]) ;
         //         break; 
         //     }
-        //     j-- ;
+        //     j-- ;1
         // }
         //M2
         while(j>=1 && arr[j]<arr[j-1]){
