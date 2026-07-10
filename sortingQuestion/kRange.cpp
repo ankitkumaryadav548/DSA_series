@@ -1,4 +1,7 @@
 //given an array , arr[] containing n integers , the task is to find an integer (say k) such that after replacing each and every index of an array by |ai-k| where i belong to [1 to n], result is  sorted array. If no such integer exits that satisfies above condition then return -1.Find the Range
+
+//steps to solve this question
+
 #include<iostream>
 #include<algorithm>
 #include<climits>
