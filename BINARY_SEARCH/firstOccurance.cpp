@@ -2,19 +2,19 @@
 
 
 //Method 1 => time complexity = 0(n)
-// #include<iostream>
-// using namespace std;
-// int main(){
-//     int arr[] = {1,2,2,5,6,3,3,3,3};
-//     int n = 9;
-//     int x = 3;
-//     for(int i=0;i<n;i++){
-//         if(arr[i]==x){
-//             cout << i << endl;
-//             break;
-//         }
-//     }
-// }
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[] = {1,2,2,5,6,3,3,3,3};
+    int n = 9;
+    int x = 3;
+    for(int i=0;i<n;i++){
+        if(arr[i]==x){
+            cout << i << endl;
+            break;
+        }
+    }
+}
 
 //Method 2 => time complexity => 0(logn)
 
