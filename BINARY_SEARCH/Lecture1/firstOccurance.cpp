@@ -1,6 +1,5 @@
 //Given a sorted an array of n element and a target 'x'.Find the first occurance of 'x' in the array, if element is not present then return -1.
 
-
 //Method 1 => time complexity = 0(n)
 #include<iostream>
 using namespace std;
@@ -39,7 +38,7 @@ int main(){
             else{  //arr[mid-1] == x
                 high = mid-1;
             }
-        }else if(arr[mid]<<x) low = mid+1;
+        }else if(arr[mid]<x) low = mid+1;
         else high = mid-1;
     }
     if(flag==false) cout << -1;
