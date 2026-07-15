@@ -1,29 +1,29 @@
-//finding k closest element from the array
+// //finding k closest element from the array
 
-class Solution {
-public:
-    vector<int> findClosestElements(vector<int>& arr, int k, int x) {
+// class Solution {
+// public:
+//     vector<int> findClosestElements(vector<int>& arr, int k, int x) {
 
-        int n = arr.size();
+//         int n = arr.size();
 
-        int low = 0;
-        int high = n - k;
+//         int low = 0;
+//         int high = n - k;
 
-        while (low < high) {
+//         while (low < high) {
 
-            int mid = low + (high - low) / 2;
+//             int mid = low + (high - low) / 2;
 
-            if (x - arr[mid] > arr[mid + k] - x)
-                low = mid + 1;
-            else
-                high = mid;
-        }
+//             if (x - arr[mid] > arr[mid + k] - x)
+//                 low = mid + 1;
+//             else
+//                 high = mid;
+//         }
 
-        vector<int> ans;
+//         vector<int> ans;
 
-        for (int i = low; i < low + k; i++)
-            ans.push_back(arr[i]);
+//         for (int i = low; i < low + k; i++)
+//             ans.push_back(arr[i]);
 
-        return ans;
-    }
-};
+//         return ans;
+//     }
+// };
