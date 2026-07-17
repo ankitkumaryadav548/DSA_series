@@ -1,3 +1,4 @@
+//write programme to greet Good Morning
 #include <iostream>
 using namespace std;
 

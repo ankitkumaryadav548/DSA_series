@@ -9,6 +9,8 @@ void preInPost(int n){
     preInPost(n-1);
     cout<<"post "<< n<<endl;
 }
+
+
 int main(){
     preInPost(3);
 
