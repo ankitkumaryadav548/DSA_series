@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// void sum1ToN(int sum, int n) {
+// void sum1ToN(int sum, int n) {  //using extra parameter
 //     if(n==0){
 //         cout << sum << endl;
 //         return ;

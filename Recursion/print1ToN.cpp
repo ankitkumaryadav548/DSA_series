@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// void print(int i, int n){
+// void print(int i, int n){  //using extra paramter
 //     if(i>n) return ;
 //     cout << i << endl;
 //     print(i+1,n);
