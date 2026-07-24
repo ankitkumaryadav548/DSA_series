@@ -10,3 +10,5 @@ int main(){
     cin>> n;
     cout<<fibo(n);
 }
+
+//fibonacci series work in serial wise not in pallel wise
