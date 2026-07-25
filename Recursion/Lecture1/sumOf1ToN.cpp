@@ -21,3 +21,4 @@ int main(){
     // sum1ToN(0,n);
     cout<<sum2(n);
 }
+

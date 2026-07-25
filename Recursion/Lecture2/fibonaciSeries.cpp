@@ -1,3 +1,8 @@
+//time complexity of fibonacci series =>
+// T.C => 0(2^n) , it also called exponencial time complexity
+//for all programme in which condition are like fibo(n-1)+fibo(n-2) , for that approx all time complexity is 0(2^n) => exponecial time complexity
+//same time complexity for stairPath programme
+
 #include <iostream>
 using namespace std;
 int fibo(int n){
@@ -12,3 +17,4 @@ int main(){
 }
 
 //fibonacci series work in serial wise not in pallel wise
+

@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>  
 using namespace std;
 
 void preInPost(int n){      
@@ -15,3 +15,25 @@ int main(){
     preInPost(3);
 
 }
+
+// Pre  3
+// Pre  2
+// Pre  1
+// In   1
+// post 1
+// In   2
+// Pre  1
+// In   1
+// post 1
+// post 2
+// In   3
+// Pre  2
+// Pre  1
+// In   1
+// post 1
+// In   2
+// Pre  1
+// In   1
+// post 1
+// post 2
+// post 3
