@@ -1,3 +1,12 @@
+//partitionation means breaking array into two equal part => sum of both partitoned array must be equal 
+
+
+//formula to solve this question 
+// 0 to x == x+1 to n-1
+// pre[x] = pre[n-1] -pre[x+1-1]
+// 2*pre[x] = pre[n-1]
+
+
 #include<iostream>
 using namespace std;
 
