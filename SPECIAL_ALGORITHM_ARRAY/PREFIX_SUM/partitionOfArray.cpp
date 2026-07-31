@@ -1,3 +1,13 @@
+// write code to make partition of array means after breaking array into two half , there sum must be equal
+
+//partition means breaking array into two equal part => sum of both partitoned array must be equal 
+
+
+//formula to solve this question
+// 0 to x == x+1 to n-1
+// pre[x] = pre[n-1] -pre[x+1-1]
+// 2*pre[x] = pre[n-1]
+
 
 #include<iostream>
 using namespace std;
@@ -9,8 +19,6 @@ int main(){
     for(int i=1;i<n;i++){
         arr[i] = arr[i] + arr[i-1];
     }
-
-    
 
     //check if x exists or not
     //here x is middle index of the array
