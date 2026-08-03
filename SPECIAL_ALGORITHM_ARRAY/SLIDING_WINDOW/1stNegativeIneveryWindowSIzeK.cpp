@@ -1,6 +1,7 @@
 //write code to find 1st negative number in every window of sixe k.
 
 //using brute force => 
+// Method 1     
 #include<iostream>
 using namespace std;
 
@@ -31,3 +32,6 @@ int main()
 
     return 0;
 }
+
+// Method 2 
+//using sliding window
