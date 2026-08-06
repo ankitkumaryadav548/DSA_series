@@ -1,5 +1,6 @@
 //write code to find 1st negative number in every window of sixe k.
 
+
 //using brute force => 
 // Method 1     
 #include<iostream>

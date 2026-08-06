@@ -1,5 +1,6 @@
 //leetcode 1052 (grumpy bookstore owner)
 
+
 #include<iostream>
 #include<vector>
 using namespace std;
