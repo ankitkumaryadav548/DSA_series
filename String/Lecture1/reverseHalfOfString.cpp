@@ -1,4 +1,4 @@
-//input a string of even length and reverse the first half of the string 
+//input a string of even length and reverse the first half of the string  
 #include<iostream>
 #include<string>
 #include<algorithm>

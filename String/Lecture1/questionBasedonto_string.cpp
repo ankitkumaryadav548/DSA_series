@@ -6,5 +6,5 @@ using namespace std ;
 int main(){
     int x = 124316327;
     string n = to_string(x);
-    cout << x << endl << n.size() ; 
+    cout << n << endl << n.size() ; 
 }
