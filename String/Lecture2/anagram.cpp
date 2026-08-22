@@ -1,4 +1,5 @@
-//leetcode 242
+//leetcode 242 
+//anagram means when two word are similar
 #include<iostream>
 #include<string>
 #include<algorithm>
