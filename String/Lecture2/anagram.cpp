@@ -1,5 +1,5 @@
 //leetcode 242 
-//anagram means when two word are similar
+// An anagram means two strings have exactly the same characters with the same frequencies, but possibly in a different order.
 #include<iostream>
 #include<string>
 #include<algorithm>

@@ -28,24 +28,45 @@
 // }
 
 //optimised code
-#include <iostream>
-#include <string>
-using namespace std;
+// #include <iostream>
+// #include <string>
+// using namespace std;
 
-int main() {
-    string s;
-    cin >> s;
+// int main() {
+//     string s;
+//     cin >> s;
+
+//     int count = 0;
+//     int n = s.length();
+
+//     for(int i = 1; i < n - 1; i++) {
+//         if(s[i] != s[i-1] && s[i] != s[i+1]) {
+//             count++;
+//         }
+//     }
+
+//     cout << count;
+
+//     return 0;
+// }
+
+//practise of optimised code
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    string str;
+    cout << "Enter your string: ";
+    cin >> str ;
+    int n = str.size();
 
     int count = 0;
-    int n = s.length();
-
-    for(int i = 1; i < n - 1; i++) {
-        if(s[i] != s[i-1] && s[i] != s[i+1]) {
-            count++;
+    for(int i=0;i<n;i++){
+        if(str[i]!=str[i-1] && str[i]!=str[i+1]){
+            count ++ ;
         }
     }
-
-    cout << count;
-
-    return 0;
+    cout << count ;
 }
+
