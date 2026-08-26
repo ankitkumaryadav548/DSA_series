@@ -10,9 +10,8 @@ int main(){
     }
     cout << endl;
     //bubble sort
-    for(int i=0;i<=n-1;i++){
-        //traverse
-        // for(int j=0;j<=n-1;j++){
+    for(int i=0;i<=n-1;i++){   //controls how many passes
+        // for(int j=0;j<=n-1;j++){  //performs the comparisons/swaps in each pass
         for(int j=0;j<=n-1-i;j++){  // most efficient to include (n-1-i)
             if(arr[j]>arr[j+1]){  //swap
                 int temp = arr[j];

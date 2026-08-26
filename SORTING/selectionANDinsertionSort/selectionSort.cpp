@@ -1,7 +1,7 @@
 //selection sort
 
 //step for selection sort
-//1. find minimum element  and index of minimum element from the array
+//1. find minimum element and index of minimum element from the array
 //2. compare minimum element with 1st element of the array if minimum element is less than 1st element then swap both element 
 
 #include<iostream>

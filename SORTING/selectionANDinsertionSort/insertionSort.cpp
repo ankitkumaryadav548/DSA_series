@@ -1,4 +1,4 @@
-//selection sort
+//insertion sort
 //insertion sorting is the stable sorting algorithm
 
 //steps for selection sort =>
@@ -30,7 +30,7 @@ int main(){
         //     j-- ;1
         // }
         //M2
-        while(j>=1 && arr[j]<arr[j-1]){
+        while(j>=1 && arr[j-1]> arr[j]){
             swap(arr[j],arr[j-1]);
             j-- ;
         }
