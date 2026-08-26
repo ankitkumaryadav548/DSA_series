@@ -1,38 +1,75 @@
-#include <iostream>
-using namespace std;
+// //condition of Binary Search 
+// // array must be sorted 
 
-int main() {
-    int arr[] = {2, 5, 8, 12, 16, 23, 38, 56, 72};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int target = 23;
+// #include <iostream>
+// using namespace std;
 
-    int low = 0;
-    int high = n - 1;
-    int mid;
-    bool flag = false;
+// int main() {
+//     int arr[] = {2, 5, 8, 12, 16, 23, 38, 56, 72};
+//     int n = sizeof(arr) / sizeof(arr[0]);
 
-    while (low <= high) {
-        mid = low + (high - low) / 2;
+//     int target = 23;
+//     int low = 0;
+//     int high = n - 1;
+//     int mid;
+//     bool flag = false;
 
-        if (arr[mid] == target) {
+//     while (low <= high) {
+//         mid = low + (high - low) / 2;
+
+//         if (arr[mid] == target) {
             
-            // cout << mid;
-            flag = true;
-            break;
-        }
-        else if (arr[mid] < target) {
-            low = mid + 1;  
-        }
-        else {
-            high = mid - 1;
-        }
-    }
+//             // cout << mid;
+//             flag = true;
+//             break;
+//         }
+//         else if (arr[mid] < target) {
+//             low = mid + 1;  
+//         }
+//         else {
+//             high = mid - 1;
+//         }
+//     }
 
    
-    if(flag==true)
-        cout << "Element found at index "<< mid << endl;
-    else
-        cout << "Element not found";
+//     if(flag==true)
+//         cout << "Element found at index "<< mid << endl;
+//     else
+//         cout << "Element not found";
 
-    return 0;
-}
+//     return 0;
+// }
+
+//practise of binary search
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int arr[] = {2, 5, 8, 12, 16, 23, 38, 56, 72};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+
+//     int target = 23 ;
+//     int low = 0;
+//     int high = n-1;
+//     bool flag = false ;
+//     int mid ;
+//     while(low<=high){
+//          mid = low + (high-low)/2 ;
+
+//         if(arr[mid] == target) {
+//             flag = true ;
+//             break;
+//         }
+//         else if (arr[mid]<target) low  = mid +1;
+//         else high = mid - 1;
+        
+//     }
+//     if(flag == true) cout << target << " is found at index: " << mid << endl;
+//     else cout << "Target is not found" ;
+
+// }
+
+
+
+
+

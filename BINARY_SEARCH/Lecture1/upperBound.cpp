@@ -4,46 +4,77 @@
 //if x = 20 then uppper bound will be 21 so we have to return 21
 
 //Method1  => time complexity = 0(n)
-#include<iostream>
-using namespace std;
-int main(){
-    int arr[] = {1,2,4,5,9,15,18,21,24};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    int target = 21;
-    for(int i=0;i<n;i++){
-        if(arr[i]>target){
-         cout << arr[i];
-         break;
-        }    
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int arr[] = {1,2,4,5,9,15,18,21,24};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     int target = 21;
+//     for(int i=0;i<n;i++){
+//         if(arr[i]>target){
+//          cout << arr[i];
+//          break;
+//         }    
        
-    }
-}
+//     }
+// }
 
 
-//Method2 => time complexity => 0(logn)
-#include<iostream>
+// //Method2 => time complexity => 0(logn)
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int arr[] = {1,2,4,5,9,15,18,21,24};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+
+//     int low = 0;
+//     int high = n-1;
+//     bool flag = false;
+//     int target = 21;
+//     int mid ;
+//     while(low<high){
+//          mid = (low+high)/2 ;
+//         if(arr[mid]==target) {
+//             // cout << arr[mid+1];
+//             flag=true ;
+//             break;
+//         }
+//         else if(arr[mid]<target) low = mid+1;
+//         else high = mid-1;
+//     }
+//     // if(flag == false){
+//     //     cout << arr[low];
+//     // }
+//     if(flag == true) cout << arr[mid+1];
+//     else cout << arr[low] ;
+
+// }
+
+// 
+
+#include <iostream>
 using namespace std;
 int main(){
     int arr[] = {1,2,4,5,9,15,18,21,24};
     int n = sizeof(arr)/sizeof(arr[0]);
 
+    int target = 9 ;  //it will return 15
     int low = 0;
     int high = n-1;
     bool flag = false;
-    int target = 21;
-    while(low<high){
-        int mid = (low+high)/2 ;
-        if(arr[mid]==target) {
-            cout << arr[mid+1];
-            flag=true ;
+    int mid ;
+
+    while(low <= high){
+        mid = (low + high)/2 ;
+        if(arr[mid] == target){
+            flag = true;
             break;
         }
-        else if(arr[mid]<target) low = mid+1;
+        else if(arr[mid]< target) low = mid+1;
         else high = mid-1;
     }
-    if(flag == false){
-        cout << arr[low];
-    }
+    if(flag == true) cout << arr[mid+1];
+    else cout << arr[low];
 
 }
 

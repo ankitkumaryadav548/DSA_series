@@ -59,20 +59,20 @@ int main(){
     bool flag = false;
     int low = 0;
     int high = n-1;
-
+    int mid ;
     while(low<=high){
-        int mid = low + (high-low)/2 ;
+         mid = low + (high-low)/2 ;
         if(arr[mid]==target) {
-            cout << arr[mid-1];
+            // cout << arr[mid-1];
             flag = true;
             break;
         }
         else if(arr[mid]<target) low = mid+1;
-        else{
-            high = mid-1;
-        }
+        else  high = mid-1;
+        
     }
-    if(flag==false) cout << arr[high];
+    if(flag==true) cout << arr[mid-1];
+    else cout << arr[high] ;
     
 }
 
