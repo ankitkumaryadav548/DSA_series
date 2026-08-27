@@ -1,0 +1,3 @@
+In Lecture 3 =>
+all 3 question is from leetcode 
+Question No: 1011 , 875 , 2187

@@ -63,6 +63,12 @@
 //     merge(a,b,v);
 
 
+    // to clear temporary space from the vector so that Space complexiy from 0(nlogn) brcome 0(n)
+    
+    // a.clear();
+    // b.clear();
+
+
 // }
 
 // int main(){
