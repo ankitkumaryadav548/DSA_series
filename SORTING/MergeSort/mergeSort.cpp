@@ -1,14 +1,20 @@
+// steps for merge sort
+//1.break array into 2 parts then copy and paste
+//2.magic means call function recursively
+//3.merge two sorted array into single sorted array
+
 // #include<iostream>
 // #include<vector>
 // using namespace std;
 
+// merge function will merge two sorted array
 // void merge(vector<int>&a , vector<int>&b , vector<int>&res){
 //     int i = 0;  //a
 //     int j = 0;  //b
 //     int k = 0;  //res
 
 //     while(i<a.size()  && j<b.size()){
-//         if(a[i]<b[j]){
+//         if(a[i]<=b[j]){
 //             res[k] = a[i];
 //             i++ ;
 //             k++;
@@ -137,6 +143,14 @@ void mergeSort(vector<int>&v){
 
     // merging two sorted array
     merge(a,b,v);
+
+    //optional 
+    // before space complexity of merge sort was 0(nlogn)
+    //But now
+    // after clearing all extra temporary vector from this sorting Space Complexity become 0(n)
+    //clear() is usually used to empty the temporary array a before storing the result of the next merge.
+    a.clear();
+    b.clear();
 
     
 }
