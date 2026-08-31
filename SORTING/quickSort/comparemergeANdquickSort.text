@@ -1,0 +1,14 @@
+Merge Sort vs Quick Sort
+Feature	 |   Merge Sort   |  	Quick Sort
+Basic idea | Divide array into 2 halves, sort them, merge |	Choose pivot, partition around pivot
+Technique |	Divide & Conquer |	Divide & Conquer
+Best case	O(n log n)	O(n log n)
+Average case	O(n log n)	O(n log n)
+Worst case	O(n log n)	O(n²)
+Extra space	O(n) for arrays	O(log n) average due to recursion
+Stable?	✅ Yes	❌ Usually no
+In-place?	❌ Usually no	✅ Yes
+Performance on arrays	Good	Often faster in practice
+Linked lists	⭐ Excellent	Usually less convenient
+Worst-case guarantee	✅ Yes	❌ No, unless carefully designed
+Main operation	Merge	Partition
