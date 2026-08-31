@@ -3,14 +3,27 @@
 
 //T.C => avg => 0(nlogn)
     //=> worst => 0(n^2)
-//S.C => 0(1)
+//S.C => 0(logn)
+//quick sort is inplace sorting 
+
+
+//stable sort => Bubble , insertion and merge sort  
+//unstable sort => selection , quick sort  
 
 //famous sorting 
+//steps are for sorting :
 //step1 => find pivot element so we will assume 0 index as of pivot and put that element at its place (i-1)
 //step2 => put element which is less then pivot element to left side and which is greater then pivot to right side 
 //step3 => then apply magic and rearrage both side element in ascending order and atlast all element get sorted 
 
 // function will do 2 work => 1. it will keep pivot element to right place 2.and less than pivot element will be left side and greater then pivot element to right side 
+
+
+//Application of quick sort
+// 1. Internal sorting  uses variation of quick sort
+// 2. quick select
+// 3. whenever there is no need of stabiltiy then we use quick sort
+
 
 // #include<iostream>
 // using namespace std;
@@ -110,4 +123,6 @@ int main(){
 //1. find place for pivot element
 //2. put element which are smaller than pivot toward to left side and right side which are greater than pivot element 
 //then after magic will do means recursively 
+
+
 
