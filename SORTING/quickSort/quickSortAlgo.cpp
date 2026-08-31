@@ -1,6 +1,10 @@
 //inbuild sorting technique is done by quick sort
 //sort(arr.begin(),arr.end()) => inbuild sort => T.C => 0(nlogn)
 
+//T.C => avg => 0(nlogn)
+    //=> worst => 0(n^2)
+//S.C => 0(1)
+
 //famous sorting 
 //step1 => find pivot element so we will assume 0 index as of pivot and put that element at its place (i-1)
 //step2 => put element which is less then pivot element to left side and which is greater then pivot to right side 
@@ -68,7 +72,7 @@ int partition(int arr[],int si, int ei){
 
     int i = si;
     int j = ei;
-    while(i<pivotElement && j>pivotElement){
+    while(i<PIdx && j>PIdx){
         if(arr[i]<pivotElement) i++ ;
         if(arr[j]>pivotElement) j-- ;
         else if(arr[i>pivotElement && arr[j]<pivotElement]){
@@ -76,15 +80,14 @@ int partition(int arr[],int si, int ei){
             i++ ;
             j-- ;
         }
-
     }
     return PIdx ;
 }
 void quickSort(int arr[], int si , int ei){
     if(si>=ei) return ;
     int PIdx = partition(arr,si,ei);
-    quickSort(arr,si,PIdx-1);
-    quickSort(arr,PIdx+1,ei);
+    quickSort(arr,si,PIdx-1);  //magic
+    quickSort(arr,PIdx+1,ei);  //magic
 }
 int main(){
     int arr[] = {5,1,8,2,7,6,3,4};
@@ -99,3 +102,12 @@ int main(){
     }
 
 }
+
+
+// int arr[] = {5,3,7,2,4,9,8,1,6};
+
+//partition function will do 2 work 
+//1. find place for pivot element
+//2. put element which are smaller than pivot toward to left side and right side which are greater than pivot element 
+//then after magic will do means recursively 
+

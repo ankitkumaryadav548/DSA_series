@@ -6,18 +6,18 @@ int partition(int arr[],int si, int ei){
     int pivotElement = arr[(si+ei)/2];
     int count = 0;
     for(int i = si;i<=ei;i++){
-        if(arr[i] == (si+ei)/2) continue;
+        if(i == (si+ei)/2) continue;
         if(arr[i]<pivotElement) count++ ;
     }
     int PIdx = count + si ;
-    swap(arr[si],arr[PIdx]);
+    swap(arr[(si+ei)/2],arr[PIdx]);
 
     int i = si;
     int j = ei;
-    while(i<pivotElement && j>pivotElement){
+    while(i<PIdx && j>PIdx){
         if(arr[i]<pivotElement) i++ ;
         if(arr[j]>pivotElement) j-- ;
-        else if(arr[i>pivotElement && arr[j]<pivotElement]){
+        else if(arr[i]>pivotElement && arr[j]<pivotElement){
             swap(arr[i],arr[j]);
             i++ ;
             j-- ;
@@ -45,3 +45,4 @@ int main(){
     }
 
 }
+
