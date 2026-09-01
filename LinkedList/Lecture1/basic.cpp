@@ -5,11 +5,14 @@ class Node{
     public:
     int val;
     Node *Next;
+
     Node(int val){
         this->val = val ;
         this->Next = NULL ;
     }
 } ;
+
+
 int main(){
     Node a(10);
     Node b(20);
@@ -24,5 +27,8 @@ int main(){
     d.Next = &e;
     e.Next = &f;
     
-    cout << (*(a.Next)).val ;
+    cout << (a.Next)->val  << endl ;
+    cout << ((a.Next)->Next)->val ;
+    // cout << a->Next->Next->Next->Next->val ;
+    // cout << display(a);
 }
