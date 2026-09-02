@@ -70,15 +70,15 @@ void insertAtend(Node* head, int val){
     head->next = t;
 }
 
-void insertAtHead(int val){
-    Node* temp = new Node(val);
-    if(size==0) head = tail= temp;
-    else{
-        temp->next = head;
-        head = temp ;
-    }
-    size++ ;
-}
+// void insertAtHead(int val){
+//     Node* temp = new Node(val);
+//     if(size==0) head = tail= temp;
+//     else{
+//         temp->next = head;
+//         head = temp ;
+//     }
+//     size++ ;
+// }
 int main(){
     Node* a = new Node(10);
     Node* b = new Node(20);
@@ -101,7 +101,7 @@ int main(){
     cout << endl;
     insertAtend(a,80);  // inserting last of linked list
     display(a) ;
-    insertAtHead(a,50);
+    // insertAtHead(a,50);
     cout << endl;
     display(a) ;
 }
