@@ -3,88 +3,88 @@
 //2.magic means call function recursively
 //3.merge two sorted array into single sorted array
 
-// #include<iostream>
-// #include<vector>
-// using namespace std;
+#include<iostream>
+#include<vector>
+using namespace std;
 
 // merge function will merge two sorted array
-// void merge(vector<int>&a , vector<int>&b , vector<int>&res){
-//     int i = 0;  //a
-//     int j = 0;  //b
-//     int k = 0;  //res
+void merge(vector<int>&a , vector<int>&b , vector<int>&res){
+    int i = 0;  //a
+    int j = 0;  //b
+    int k = 0;  //res
 
-//     while(i<a.size()  && j<b.size()){
-//         if(a[i]<=b[j]){
-//             res[k] = a[i];
-//             i++ ;
-//             k++;
-//         }
-//         else { // a[i]>b[j]
-//             res[k] = b[j];
-//                 j++ ;
-//                 k++ ;
-//         }
-//         if(i==a.size()){  //a is at end ;
-//             while(j<b.size()){
-//                 res[k++] = b[j++];
-//                 // k++ ;
-//                 // j++;
-//             }
-//         }
-//         if(j==b.size()){ // b is at end ;
-//             while(i<a.size()){
-//                 res[k++] = a[i++];
-//                 // k++ ;
-//                 // i++;
-//             }
-//         }
-//     }
-// }
+    while(i<a.size()  && j<b.size()){
+        if(a[i]<=b[j]){
+            res[k] = a[i];
+            i++ ;
+            k++;
+        }
+        else { // a[i]>b[j]
+            res[k] = b[j];
+                j++ ;
+                k++ ;
+        }
+        if(i==a.size()){  //a is at end ;
+            while(j<b.size()){
+                res[k++] = b[j++];
+                // k++ ;
+                // j++;
+            }
+        }
+        if(j==b.size()){ // b is at end ;
+            while(i<a.size()){
+                res[k++] = a[i++];
+                // k++ ;
+                // i++;
+            }
+        }
+    }
+}
 
-// void mergeSort(vector<int>&v){
-//     int n = v.size();    // 6, 4, 2, 7, 8, 3, 1
-//     if(n==1) return ;
-//     int n1 = n/2;        // n1 = 3
-//     int n2 = n - n/2 ;   // n2 = 4
-//     vector<int> a(n1) , b(n2) ;
-//     //copy paste
-//     for(int i = 0;i<n1;i++){
-//         a[i] = v[i];
-//     }
-//     for(int i = 0;i<n2;i++){
-//         b[i] = v[n1+i];
-//     }
+void mergeSort(vector<int>&v){
+    int n = v.size();    // 6, 4, 2, 7, 8, 3, 1
+    if(n==1) return ;
+    int n1 = n/2; //a        // n1 = 3
+    int n2 = n - n/2 ; //b   // n2 = 4
+    vector<int> a(n1) , b(n2) ;
+    //copy paste
+    for(int i = 0;i<n1;i++){
+        a[i] = v[i];
+    }
+    for(int i = 0;i<n2;i++){
+        b[i] = v[n1+i];
+    }
 
-//     //magic
-//     mergeSort(a);
-//     mergeSort(b);
+    //magic
+    mergeSort(a);
+    mergeSort(b);
 
-//     //merge
-//     merge(a,b,v);
+    //merge
+    merge(a,b,v);
 
 
-    // to clear temporary space from the vector so that Space complexiy from 0(nlogn) brcome 0(n)
+    // to clear temporary space from the vector so that Space complexiy from 0(nlogn) become 0(n)
     
-    // a.clear();
-    // b.clear();
+    a.clear();
+    b.clear();
 
 
-// }
+}
 
-// int main(){
-//     int arr[] = {6, 4, 2, 7, 8, 3, 1};
-//     int n = sizeof(arr)/sizeof(arr[0]);
-//     vector<int> v(arr , arr+n);
-//     for(int i=0; i<n;i++){ // printing vector
-//         cout << v[i] << " ";
-//     }
-//     cout << endl;
-//     mergeSort(v);  //calling funcion 
+int main(){
+    int arr[] = {6, 4, 2, 7, 8, 3, 1};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    vector<int> v(arr , arr+n);
+    for(int i=0; i<n;i++){ // printing vector
+        cout << v[i] << " ";
+    }
+    cout << endl;
+    mergeSort(v);  //calling funcion 
 
-//     for(int i=0; i<n;i++){  //again printing 
-//         cout << v[i] << " ";
-//     }
-// }
+    for(int i=0; i<n;i++){  //again printing 
+        cout << v[i] << " ";
+    }
+}
 
 
 //practise of merge sort

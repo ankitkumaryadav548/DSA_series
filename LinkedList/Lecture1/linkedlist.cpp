@@ -104,6 +104,8 @@ int main(){
     // insertAtHead(a,50);
     cout << endl;
     display(a) ;
+    cout << endl;
+ 
 }
 
 //for revision 
