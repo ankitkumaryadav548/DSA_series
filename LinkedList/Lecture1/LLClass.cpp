@@ -98,6 +98,15 @@ class LinkedList{  //user defined data structure
         }
     }
 
+    void deleteAtTail(){
+        Node* temp = head;
+    for(int i=1;i<size-1;i++){
+        temp = temp->next;
+    }
+   tail = temp;
+   tail->next = NULL ;
+    size--;
+    }
     void deleteAtIdx(int idx){
         if(size == 0) {
             cout << "List is empty";
@@ -126,25 +135,25 @@ int main(){
     ll.insertAtTail(10);
     ll.insertAtTail(20);
     ll.insertAtTail(30);
-    ll.display();
+    // ll.display();
     ll.insertAtTail(40);
     ll.display();
     cout << ll.size << endl;
-    ll.inserAtHead(78);
-    ll.display();
-    cout << endl;
-    ll.insertAtIdx(2,44);
-    ll.display();
-    cout << endl;
-    cout << ll.getElementAtIdx(3);
-    cout << endl;
-    ll.deleteAtHead();
-    ll.display();
-    cout << endl;
+    // ll.inserAtHead(78);
+    // ll.display();
+    // cout << endl;
+    // ll.insertAtIdx(2,44);
+    // ll.display();
+    // cout << endl;
+    // cout << ll.getElementAtIdx(3);
+    // cout << endl;
+    // ll.deleteAtHead();
+    // ll.display();
+    // cout << endl;
     ll.deleteAtTail();
     ll.display();
     cout << endl;
-    ll.deleteAtIdx(1);
-    ll.display();
+    // ll.deleteAtIdx(1);
+    // ll.display();
     return 0;
 }

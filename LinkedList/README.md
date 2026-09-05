@@ -19,7 +19,7 @@ public:
         next = nullptr;
     }
 };
-```
+
 
 ## Quick Comparison
 * **Array**: Contiguous memory, $O(1)$ random access, $O(N)$ insertion at head.
@@ -29,4 +29,4 @@ public:
 ```bash
 g++ LinkedList/Lecture1/basic.cpp -o ll
 ./ll
-```
+

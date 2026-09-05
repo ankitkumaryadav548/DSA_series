@@ -24,3 +24,4 @@
 
 // * Dynamic array/vector amortized.
 // ** Linked list with a tail pointer.
+
