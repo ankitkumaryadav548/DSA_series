@@ -21,17 +21,24 @@ void display(Node* head){  // displaying ll => iterative way
      temp = temp->next;   
     }
 }
+//display list in reverse order using tail node
+void displayRev(Node* tail){   // s.c => 0(1)
+    while(tail!=NULL){ 
+        cout << tail->val << " " ;
+        tail = tail->prev ;
+    }
+}
 void displayRec(Node* head){  // displaying ll => recursive way
     if(head == NULL) return ;
     cout << head->val << " ";
     displayRec(head->next);
 }
 void displayRecRev(Node* head){  // displaying reverse ll => recursive way
-    if(head == NULL) return ;
+    if(head == NULL) return ;   // S.C => 0(n)
     displayRecRev(head->next);
     cout << head->val << " ";
 }
-
+ 
 
 int main(){
     Node* a = new Node(10);
@@ -50,6 +57,8 @@ int main(){
     b->prev = a;
 
     display(a);   
+    cout << endl;
+    displayRev(e);
     cout << endl;
     displayRec(a); 
     cout << endl;
