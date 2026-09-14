@@ -1,3 +1,5 @@
+//manual implemenatation of linked list
+
 #include<iostream>
 using namespace std;
 
