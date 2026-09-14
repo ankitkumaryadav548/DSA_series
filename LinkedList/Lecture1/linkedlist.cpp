@@ -11,17 +11,17 @@ class Node{
 
     }
 };
-
+//displaying using recursion
 void displayRec(Node* head){   // T.C => 0(n)
     if(head == NULL) return ; // S.C => 0(n)
-    cout << head->val << " " ;
-    displayRec(head->next);
+    cout << head->val << " " ;//here we have to write code less but S.C is more 
+    displayRec(head->next);   // then iterative
 }
 
 void display(Node* head){  //T.C => 0(n)
     Node* temp = head;     // S.C => 0(1)
     while(temp != NULL){   //iterative displaying of element is best then recursive
-        cout << temp->val <<" ";
+        cout << temp->val <<" ";// but we have to write more code then recursiove
         temp = temp->next ;
     }
 }
