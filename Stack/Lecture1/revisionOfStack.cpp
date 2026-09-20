@@ -15,10 +15,10 @@ int main(){
     st.push(100);  
     // How to traverse stack
 
-    // while(st.size()>0){
-    //  cout << st.top() << endl;  // 40 30 20 10
-    //  st.pop();   
-    // }
+    while(st.size()>0){
+     cout << st.top() << endl;  // 40 30 20 10
+     st.pop();   
+    }
     //how to getback element  after printing / popping
     // we will male extra temp stack
     stack<int>temp;
