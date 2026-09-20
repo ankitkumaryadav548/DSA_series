@@ -33,6 +33,12 @@ class Stack{    //user defined data structure
     int size(){
         return idx+1;
     }
+    void display(){
+        for(int i=0;i<=idx;i++){
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
 
 };
 int main(){
@@ -45,6 +51,8 @@ int main(){
     st.push(40);
     st.push(50);
     cout << st.top() << endl;
-    cout << st.size();
+    cout << st.size() << endl;
+    st.display();
+
 
 }
