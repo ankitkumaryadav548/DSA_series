@@ -17,6 +17,8 @@ int main()
     }
     cout << endl;
     int nge[n];
+    //Method2 => using stack 
+    //T.C = 0(n) , S.C = 0(n)
     stack<int> st;
     nge[n-1] = -1;
     st.push(arr[n-1]);
