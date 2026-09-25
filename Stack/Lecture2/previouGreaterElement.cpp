@@ -34,7 +34,7 @@
 #include<stack>
 using namespace std;
 int main(){
-    int arr[] = {3,5,7,1,3,7,9,6};
+    int arr[] = {5,3,8,6,0,1,9};
     int n = sizeof(arr)/sizeof(arr[0]);
     for(int i=0;i<n;i++){
         cout << arr[i] << " ";
@@ -55,6 +55,6 @@ int main(){
         cout << pge[i] << " ";
     }
 
-
 }
+
 
