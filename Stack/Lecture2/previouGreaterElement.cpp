@@ -28,6 +28,7 @@
 
 // }
 
+
 //practise => previous greater element
 
 #include<iostream>
@@ -54,7 +55,6 @@ int main(){
     for(int i=0;i<n;i++){
         cout << pge[i] << " ";
     }
-
 }
 
 
