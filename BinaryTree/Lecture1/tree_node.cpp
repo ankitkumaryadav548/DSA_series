@@ -49,6 +49,8 @@ int minInTree(Node* root){
     return min(root->val, min(lmin,rmin));
 }
 
+
+
 int level(Node* root){          // level of tree
     if(root==NULL) return 0;
     return 1 + max(level(root->left),level(root->right))  ;
