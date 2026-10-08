@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Node{      //creation of tree
+class Node{      //creation of tree      
     public:
     int val;
     Node* left;

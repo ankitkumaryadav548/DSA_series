@@ -15,12 +15,28 @@ class Node{      //creation of tree
     }
 };
 
+int level(Node* root){
+    if(root == NULL) return 0;
+    return 1 + max(level(root->left),level(root->right));
+}
+
 void nthLevel(Node* root,int current,int targetLevel){     
     if(root== NULL) return ;
-    if(current==targetLevel) 
+    if(current==targetLevel){
         cout << root->val<< " ";
+        return;
+    } 
+    
     nthLevel(root->left,current+1,targetLevel);
     nthLevel(root->right,current+1,targetLevel);
+}
+
+void levelOrder(Node* root){
+    int n = level(root);
+    for(int i=1;i<=n;i++){
+        nthLevel(root, 1, i);
+        cout << endl;
+    }
 }
 
 int main(){
@@ -37,11 +53,15 @@ int main(){
     b->right = e;
     c->left = f;
     c->right = g;
-    nthLevel(a,1,2);
-    // cout << endl;
-    // Inorder(a);
-    // cout<< endl;
-    // postorder(a);
-    // cout << endl;
+    // nthLevel(a,1,3);
+    
+    //level order traversal
+    // nthLevel(a,1,1);
+    // nthLevel(a,1,2);
+    // nthLevel(a,1,3);
+    levelOrder(a);
+
+
     
 }
+
