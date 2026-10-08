@@ -1,4 +1,4 @@
-// easy to print bfs and most famouse
+// easy to print bfs and most famause
 
 //level order traversal using queue
 // steps =>
