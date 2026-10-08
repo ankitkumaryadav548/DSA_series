@@ -20,6 +20,7 @@ int level(Node* root){
     return 1 + max(level(root->left),level(root->right));
 }
 
+// reverse order level wise(from left to right)
 void nthLevel(Node* root,int current,int targetLevel){     
     if(root== NULL) return ;
     if(current==targetLevel){
@@ -29,6 +30,17 @@ void nthLevel(Node* root,int current,int targetLevel){
     
     nthLevel(root->left,current+1,targetLevel);
     nthLevel(root->right,current+1,targetLevel);
+}
+// reverse order level wise(from right to left)
+void nthLevelRev(Node* root,int current,int targetLevel){     
+    if(root== NULL) return ;
+    if(current==targetLevel){
+        cout << root->val<< " ";
+        return;
+    } 
+    
+    nthLevelRev(root->right,current+1,targetLevel);
+    nthLevelRev(root->left,current+1,targetLevel);
 }
 
 void levelOrder(Node* root){
@@ -59,9 +71,6 @@ int main(){
     // nthLevel(a,1,1);
     // nthLevel(a,1,2);
     // nthLevel(a,1,3);
-    levelOrder(a);
-
-
-    
+    levelOrder(a); 
 }
 
