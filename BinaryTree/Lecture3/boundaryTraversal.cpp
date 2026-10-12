@@ -71,6 +71,11 @@ void rightBoundry(Node* root){  // finding all left boundry node
     if(root->right == NULL) rightBoundry(root->left);
     cout << root -> val << " ";
 }
+void boundry(Node* root){
+    leftBoundry(root);
+    leafNode(root);
+    rightBoundry(root->right);
+}
 
 int main(){
     int arr[] = {
@@ -81,9 +86,9 @@ INT_MIN, 17, INT_MIN, INT_MIN, 18, INT_MIN, 19, INT_MIN, INT_MIN,
 };
     int n = sizeof(arr)/sizeof(arr[0]);
     Node* root = construct(arr , n);
-    leftBoundry(root);
-    leafNode(root);
-    rightBoundry(root->right);
+
+    boundry(root);
+  
 }
 
 
