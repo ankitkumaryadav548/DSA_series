@@ -1,4 +1,4 @@
-// write code to display right view of tree
+// write code to display right and left view of tree
 
 #include <iostream>
 #include <vector>
