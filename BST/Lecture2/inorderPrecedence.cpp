@@ -48,6 +48,14 @@ Node *precedence(Node *root)
 
     return pre;
 }
+Node* successor(Node* root){
+    if(root->right == NULL || root == NULL) return NULL;
+    Node* succ = root->right;
+    while(succ->left != NULL){
+        succ = succ->left;
+    }
+    return succ ;
+}
 int main()
 {
     Node *a = new Node(50);
@@ -76,4 +84,11 @@ int main()
     {
         cout << pre->val;
     }
+    cout << endl;
+    Node* succ = successor(a);
+    if (succ != NULL)
+    {
+        cout << succ->val;
+    }
+    
 }
