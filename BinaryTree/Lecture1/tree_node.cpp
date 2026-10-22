@@ -18,9 +18,9 @@ class Node{      //creation of tree
 
 void displayTree(Node* root){     // Displaying tree 
     if(root== NULL) return ;
+    cout << root->val<< " ";    
     displayTree(root->left);
     displayTree(root->right);
-    cout << root->val<< " ";    
 }
 int sum(Node* root){              // Adding of node values = 28
     if(root==NULL) return 0;  //base 
@@ -82,8 +82,8 @@ int main(){
     // cout << sum(a)<<endl;
     // cout << product(a)<< endl;
     // cout << size(a)<<endl;
-    cout << maxInTree(a)<<endl;
-    cout << minInTree(a)<<endl;
+    // cout << maxInTree(a)<<endl;
+    // cout << minInTree(a)<<endl;
     // cout << level(a) << endl;
     // cout << diameter(a)<< endl; 
     // cout << height(a) << endl;
@@ -118,11 +118,11 @@ int main(){
 
 // find maximum value of node
 
-int MAX(Node* root){
-    if(root == NULL) return 0;
-    int left = MAX(root->left);
-    int right = MAX(root->right);
+// int MAX(Node* root){
+//     if(root == NULL) return 0;
+//     int left = MAX(root->left);
+//     int right = MAX(root->right);
     
-    return max(root->val,max(left,right));
+//     return max(root->val,max(left,right));
     
-}
+// }

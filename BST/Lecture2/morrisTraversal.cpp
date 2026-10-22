@@ -22,8 +22,8 @@ void InOrder(Node* root){
     InOrder(root->right);
 } 
 
-// morris traversal 
-void morris(Node* root){
+// morris traversal  => inorder traversal 
+void morrisInorder(Node* root){
     Node* curr = root;
     while(curr != NULL){
         if(curr->left != NULL){  // predecessor
@@ -38,6 +38,33 @@ void morris(Node* root){
             else{  // if(pred->right != NULL)  //UNLINK
                 pred->right = NULL;
                 cout << curr->val << " ";
+                curr = curr->right;
+            }
+        }
+        
+        else{  // if(curr->left == NULL)
+            cout << curr->val << " ";
+            curr = curr->right;
+        }
+
+    }
+}
+// morris trvaersal => preOrder using inorder predecessor 
+void morrisPreorder(Node* root){
+    Node* curr = root;
+    while(curr != NULL){
+        if(curr->left != NULL){  // predecessor
+            Node* pred = curr->left; 
+            while(pred->right != NULL && pred->right != curr){
+             pred  = pred->right;   
+            }
+            if(pred->right == NULL){   // LINK
+                cout << curr->val << " ";
+                pred->right = curr;
+                curr = curr->left;
+            }
+            else{  // if(pred->right != NULL)  //UNLINK
+                pred->right = NULL;
                 curr = curr->right;
             }
         }
@@ -67,6 +94,9 @@ int main(){
 
     InOrder(a);
     cout << endl;
-    morris(a);
+    morrisInorder(a);
+    cout << endl;
+    morrisPreorder(a);
+
 
 }
