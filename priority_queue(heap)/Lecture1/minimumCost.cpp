@@ -1,4 +1,4 @@
-// Minimum cost t connect all ropes
+// Minimum cost to connect all ropes
 #include <iostream>
 #include <vector>
 #include<queue>
